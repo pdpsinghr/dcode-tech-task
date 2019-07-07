@@ -46,7 +46,7 @@ class Home extends Component {
     }
 
     renderCardView = (data) => {
-        return (data.map(item => <CardView title={item.title} description={item.description} tags={item.tags} />))
+        return (data.map(item => <CardView title={item.title} description={item.description} tags={item.tags} username = {item.username} />))
     }
 
     render() {

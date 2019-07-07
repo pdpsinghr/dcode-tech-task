@@ -11,10 +11,11 @@ const CardView = (props) => (
         </Card.Description>
       </Card.Content>
       <Card.Content extra style={{ paddingTop: 30 }}>
-        <div>
-          {props.tags.map((item) => <Label> {item}</Label>)}
-        </div>
-
+        <div className="d-flex">
+          <div>
+            {props.tags.map((item) => <Label> {item}</Label>)}
+          </div>
+        <h5 className="ml-auto">{props.username}</h5></div>
       </Card.Content>
     </Card>
   </div>

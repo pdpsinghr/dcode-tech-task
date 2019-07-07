@@ -29,7 +29,6 @@ router.get('/getAllThread', (req,res) => {
   Thread.find({
     userId: userId
   }).then(r => {
-    console.log(r)
     res.json(r)
   });
 });
